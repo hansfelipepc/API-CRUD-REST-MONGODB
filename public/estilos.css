@@ -1,0 +1,128 @@
+html {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	font-size: 16px;
+	text-align: center;
+	background-color: #222;
+}
+
+*, *:after, *:before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+a { text-decoration: none; }
+
+fieldset {
+	background-color: #EEE;
+	border: thin solid #292623;
+	padding: 1rem;
+}
+
+img {
+	display: block;
+	margin: 1rem auto;
+	max-width: 100%;
+	height: auto;
+}
+
+input[type="submit"] { cursor: pointer; }
+
+input[type="text"] {
+	border: thin solid #DDD;
+	font: 1rem sans-serif;
+	padding: .5rem;
+}
+
+:focus { outline: thin solid #EC673A; }
+
+.header {
+	padding: 1rem;
+	font-size: 2rem;
+	color: #EEE;
+	background-color: #1C5F81;
+}
+
+.container {
+	background-color: #FFF;
+	margin: 5% auto 0;
+	min-height: 600px;
+	width: 90%;
+}
+
+.item { 
+	padding: 1rem;
+	margin: 1rem;
+}
+
+.button {
+	border: thin solid #292623;
+	color: #EEE;
+	font: 1rem sans-serif;
+	padding: .5rem 1rem;
+}
+
+.button:hover { opacity: .75; }
+
+.add { background-color: #0B0; }
+
+.edit { background-color: #0871B2; }
+
+.delete { background-color: #D23641; }
+
+.show { background-color: #141414; }
+
+.error {
+	background-color: #D23641;
+	border: thin solid #292623;
+	color: #EEE;
+	font-size: 2rem;
+	margin: 2rem auto;
+	padding: 1rem;
+	text-align: center;
+}
+
+.error pre {
+	font-size: 1rem;
+	width:100%;
+	word-wrap:break-word;
+}
+
+.form div { 
+	font-size: 0;
+	margin: 1rem auto;
+}
+
+.form div:not(:last-child) > * {
+	display: inline-block;
+	padding: .25rem;
+	vertical-align: top;
+	width: 80%;
+}
+
+.form div > *:first-child:not(:last-child) {
+	font-size: 1rem;
+	text-align: right;
+	width: 20%;
+}
+
+.table {
+	border-collapse: collapse;
+	border: thin solid #292623;
+	margin: 2rem auto;
+	text-align: left;
+	width:100%
+}
+
+.table td, .table th { padding: 1rem; }
+
+.table tr:first-child { 
+	background-color: #292623;
+	color: #EEE;
+}
+
+.table tr:nth-child(even) { background-color: #DDD; }
+
+.table tr:nth-child(odd):not(:first-child) { background-color: #EEE; }

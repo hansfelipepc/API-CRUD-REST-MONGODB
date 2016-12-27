@@ -1,0 +1,24 @@
+{
+  "name": "crud-node-mongodb",
+  "version": "3.0.0",
+  "description": "App REST MVC w/ Node, Express, MONGODB",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "supervisor server.js"
+  },
+  "author": "Hans",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-method-override": "0.0.3",
+    "mongoose": "^4.7.4",
+    "morgan": "^1.7.0",
+    "pug": "^2.0.0-beta6",
+    "serve-favicon": "^2.3.2"
+  },
+  "devDependencies": {
+    "supervisor": "^0.12.0"
+  }
+}

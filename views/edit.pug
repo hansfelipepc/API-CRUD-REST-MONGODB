@@ -1,0 +1,21 @@
+extends layout.pug
+
+block content
+	section.container
+		h1.header= title
+		article.item
+			form.form(method="post", action="/actualizar/" + data._id)
+				input(type="hidden", name="_method", value="PUT")
+				input(type="hidden", name="_id", value=data._id.toString())
+				fieldset
+					div
+						input(type="text", name="name", placeholder="nombre", value=data.name, required)
+					div
+						input(type="text", name="twitter", placeholder="twitter", value=data.twitter, required)
+					div
+						input(type="text", name="country", placeholder="pais", value=data.country, required)
+					div
+						input(type="text", name="side", placeholder="equipo", value=data.side, required)
+					div
+						input.button.edit(type="submit", value="Editar")
+		a.button.show(href="/") Inicio

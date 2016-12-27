@@ -1,0 +1,19 @@
+extends layout.pug
+
+block content
+	section.container
+		h1.header= title
+		article.item
+			form.form(method="post", action="/")
+				fieldset
+					div
+						input(type="text", name="name", placeholder="nombre", required)
+					div
+						input(type="text", name="twitter", placeholder="twitter", required)
+					div
+						input(type="text", name="country", placeholder="país", required)
+					div
+						input(type="text", name="side", placeholder="equipo", required)
+					div
+						input.button.add(type="submit", value="Agregar")
+		a.button.show(href="/") Inicio

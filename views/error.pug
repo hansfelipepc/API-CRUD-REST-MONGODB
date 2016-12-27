@@ -1,0 +1,10 @@
+extends layout.pug
+
+block content
+	div.error
+		h1 Error N° #{error.status}:
+		h2= error.statusText
+		a.button.show(href="/") Inicio
+		div.item
+			pre #{error.stack}
+		img(src="indentation-war.png")
